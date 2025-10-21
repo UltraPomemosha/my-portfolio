@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.gray-gradient {
+  /* @apply bg-linear-to-br from-gray-900 to-gray-700; */
+  @apply bg-linear-to-br from-gray-900 to-gray-950;
+}

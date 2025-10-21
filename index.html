@@ -6,8 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-portfolio</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-gray-950 text-blue-50 font-sans leading-relaxed">
+    <header class="container mx-auto flex flex-nowrap items-center justify-between gap-2">
+      <span class="font-bold text-lg"> Артём Вапилов </span>
+
+      <nav>
+        <ul class="flex flex-nowrap items-center gap-2 text-gray-400">
+          <li>
+            <a href="#projects" class="p-0.5 text-inherit hover:text-blue-600 duration-300 transition-colors">
+              Проекты
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="p-0.5 text-inherit hover:text-blue-600 duration-300 transition-colors"> Навыки </a>
+          </li>
+          <li>
+            <a href="#about-me" class="p-0.5 text-inherit hover:text-blue-600 duration-300 transition-colors">
+              Обо мне
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" class="p-0.5 text-inherit hover:text-blue-600 duration-300 transition-colors">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="py-2 px-2.5 flex flex-nowrap items-center gap-1 rounded-lg bg-gray-700 hover:bg-gray-600 transition cursor-pointer"
+      >
+        <img src="" alt="Выбор темы" />
+        <span> Тема </span>
+      </button>
+    </header>
+
+    <main class="py-12 flex flex-col flex-nowrap gap-12">
+      <!-- Hero Section -->
+      <section class="container mx-auto grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col flex-nowrap gap-4">
+          <h1 class="text-4xl md:text-5xl font-bold">Привет! Я — Вапилов Артём, frontend-разработчик</h1>
+
+          <p class="text-gray-300 text-lg">
+            Специализируюсь на создании интерактивных веб интерфейсов с помощью прогрессивного JavaScript-фреймворка
+            <mark class="text-inherit bg-transparent"> "VueJs" </mark>
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium transition">
+              Мои проекты
+            </a>
+            <a
+              href="mailto:vapilovartem@gmail.com"
+              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg font-medium transition"
+            >
+              Написать письмо
+            </a>
+          </div>
+
+          <!-- Main Skill Tags -->
+          <section class="relative">
+            <h2 class="w-0 h-0 opacity-0 text-[0px] absolute -z-10 inset-0">Ключевые навыки</h2>
+            <ul class="flex flex-nowrap items-center gap-4">
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">HTML</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">CSS</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">JavaScript</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">React</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">UX/UI</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- My Face -->
+        <figure class="p-6 w-full h-full flex flex-col flex-nowrap items-center gap-4 gray-gradient rounded-xl">
+          <img
+            src=""
+            alt="Фото"
+            class="aspect-video w-full h-full bg-gray-700 rounded-lg flex items-center justify-center"
+          />
+          <figcaption class="text-sm text-gray-400">Это я - Вапилов Артём</figcaption>
+        </figure>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="container mx-auto">
+        <h2 class="text-2xl font-bold">Избранные проекты</h2>
+
+        <!-- Projects Slider -->
+        <div class="flex flex-nowrap items-stretch gap-4 overflow-hidden">
+          <article
+            class="grow-0 p-6 max-w-[33dvw] w-full min-w-3xs flex flex-col flex-nowrap gap-4 gray-gradient rounded-xl"
+          >
+            <img
+              src=""
+              alt="Проект №1 — Дашборд аналитики"
+              class="aspect-video bg-gray-700 rounded-lg flex items-center justify-center"
+            />
+
+            <h3 class="font-bold">Проект №1 — Дашборд аналитики</h3>
+            <ul class="flex flex-wrap items-center gap-2">
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Demo</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Github</li>
+            </ul>
+
+            <p class="text-gray-300 text-sm">
+              Реальный кейс: фильтры, графики, экспорт в CSV. Мой вклад: архитектура, чартинг, адаптив.
+            </p>
+
+            <section class="relative">
+              <h4 class="w-0 h-0 opacity-0 text-[0px] absolute -z-10 inset-0">Стек технологий</h4>
+              <ul class="flex flex-wrap items-center gap-2">
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">HTML</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">CSS</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">JavaScript</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">React</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">UX/UI</li>
+              </ul>
+            </section>
+          </article>
+
+          <article
+            class="grow-0 p-6 max-w-[33dvw] w-full min-w-3xs flex flex-col flex-nowrap gap-4 gray-gradient rounded-xl"
+          >
+            <img
+              src=""
+              alt="Проект №2 — Интернет-магазин"
+              class="aspect-video bg-gray-700 rounded-lg flex items-center justify-center"
+            />
+
+            <h3 class="font-bold">Проект №2 — Интернет-магазин</h3>
+            <ul class="flex flex-wrap items-center gap-2">
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Demo</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Github</li>
+            </ul>
+
+            <p class="text-gray-300 text-sm">
+              Каталог, корзина, авторизация. Оптимизировал загрузку и TTFB, внедрил code-splitting.
+            </p>
+
+            <section class="relative">
+              <h4 class="w-0 h-0 opacity-0 text-[0px] absolute -z-10 inset-0">Стек технологий</h4>
+              <ul class="flex flex-wrap items-center gap-2">
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">HTML</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">CSS</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">JavaScript</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">React</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">UX/UI</li>
+              </ul>
+            </section>
+          </article>
+
+          <article
+            class="grow-0 p-6 max-w-[33dvw] w-full min-w-3xs flex flex-col flex-nowrap gap-4 gray-gradient rounded-xl"
+          >
+            <img
+              src=""
+              alt="Проект №3 — Портфолио-генератор"
+              class="aspect-video bg-gray-700 rounded-lg flex items-center justify-center"
+            />
+
+            <h3 class="font-bold">Проект №3 — Портфолио-генератор</h3>
+            <ul class="flex flex-wrap items-center gap-2">
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Demo</li>
+              <li class="bg-gray-800 text-xs px-2 py-1 rounded">Github</li>
+            </ul>
+
+            <p class="text-gray-300 text-sm">
+              Одностраничное приложение, которое собирает персональное портфолио из JSON.
+            </p>
+
+            <section class="relative">
+              <h4 class="w-0 h-0 opacity-0 text-[0px] absolute -z-10 inset-0">Стек технологий</h4>
+              <ul class="flex flex-wrap items-center gap-2">
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">HTML</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">CSS</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">JavaScript</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">React</li>
+                <li class="bg-gray-800 text-xs px-2 py-1 rounded">UX/UI</li>
+              </ul>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
